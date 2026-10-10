@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#15382d">
+  <meta name="description" content="Research team and academic supervisors for project R-26-IT-021, SLIIT.">
+  <title>About Us | Herbal Research</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+
+  <!-- Photo adjustments: keep the original cards but show complete photographs. -->
+  <style>
+    /* Taller portrait frames for members, without cropping any part. */
+    .profile-card .profile-photo {
+      height: 282px;
+      background: #edf3ea;
+    }
+    .profile-photo img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+    /* Larger supervisor photos, with room for full portraits. */
+    .supervisor-grid {
+      max-width: 970px;
+    }
+    .supervisor-card .profile-photo {
+      width: 180px;
+      min-width: 180px;
+      height: 215px;
+      background: #edf3ea;
+    }
+    @media (max-width: 900px) {
+      .supervisor-grid { grid-template-columns: 1fr; max-width: 600px; }
+    }
+    .member-label {
+      display: inline-block;
+      margin-bottom: 9px;
+      padding: 4px 9px;
+      border-radius: 7px;
+      background: #eef3ea;
+      color: #476950;
+      font-size: 11px;
+      font-weight: 750;
+      line-height: 1.5;
+    }
+    .member-label.leader {
+      background: #dcebd9;
+      color: #1b5236;
+    }
+    @media (max-width: 560px) {
+      .profile-card .profile-photo { height: 320px; }
+      .supervisor-card .profile-photo {
+        width: min(100%, 235px);
+        min-width: 0;
+        height: 260px;
+      }
+    }
+  </style>
+</head>
+
+<body data-page="about">
+  <div id="site-nav"></div>
+
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">Home</a> / About Us</div>
+        <h1 class="serif">About Us</h1>
+        <p>Meet the student researchers and academic supervisors.</p>
+      </div>
+    </section>
+
+    <!-- GROUP MEMBERS -->
+    <section class="section compact">
+      <div class="container">
+        <div class="section-heading">
+          <h2 class="serif">Research team</h2>
+        </div>
+
+        <div class="profiles">
+          <!-- Group leader: first -->
+          <article class="profile-card">
+            <div class="profile-photo"
+                 data-portrait="munasinghe"
+                 data-folder="images/team/"
+                 data-alt="Munasinghe M P">
+              <span class="initials">MP</span>
+            </div>
+            <div class="profile-body">
+              <span class="member-label leader">Group Leader</span>
+              <h3>Munasinghe M P</h3>
+              <span class="eyebrow">IT22640598</span>
+              <p class="role">Herbal Knowledge Intelligence System</p>
+            </div>
+          </article>
+
+          <!-- Group member: Plant Identification -->
+          <article class="profile-card">
+            <div class="profile-photo"
+                 data-portrait="sachintha"
+                 data-folder="images/team/"
+                 data-alt="H D Sachintha">
+              <span class="initials">HS</span>
+            </div>
+            <div class="profile-body">
+              <span class="member-label">Group Member</span>
+              <h3>H D Sachintha</h3>
+              <span class="eyebrow">IT22168986</span>
+              <p class="role">Plant Identification</p>
+            </div>
+          </article>
+
+          <!-- Group member: Cultivation Recommendation -->
+          <article class="profile-card">
+            <div class="profile-photo"
+                 data-portrait="wickramasinghe"
+                 data-folder="images/team/"
+                 data-alt="D G T K Wickramasinghe">
+              <span class="initials">DW</span>
+            </div>
+            <div class="profile-body">
+              <span class="member-label">Group Member</span>
+              <h3>D G T K Wickramasinghe</h3>
+              <span class="eyebrow">IT22132796</span>
+              <p class="role">Cultivation Recommendation</p>
+            </div>
+          </article>
+
+          <!-- Group member: Quality Assessment -->
+          <article class="profile-card">
+            <div class="profile-photo"
+                 data-portrait="pattiya-arachchi"
+                 data-folder="images/team/"
+                 data-alt="Pattiya Arachchi P A H K">
+              <span class="initials">PA</span>
+            </div>
+            <div class="profile-body">
+              <span class="member-label">Group Member</span>
+              <h3>Pattiya Arachchi P A H K</h3>
+              <span class="eyebrow">IT22112132</span>
+              <p class="role">Explainable Quality Assessment</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACADEMIC SUPERVISORS -->
+    <section class="section compact alt">
+      <div class="container">
+        <div class="section-heading">
+          <h2 class="serif">Supervisors</h2>
+        </div>
+        <div class="supervisor-grid">
+          <article class="supervisor-card">
+            <div class="profile-photo"
+                 data-portrait="nelum-amarasena"
+                 data-folder="images/supervisors/"
+                 data-alt="Mr. Nelum Amarasena">
+              <span class="initials">NA</span>
+            </div>
+            <div>
+              <span class="eyebrow">Supervisor</span>
+              <h3>Mr. Nelum Amarasena</h3>
+            </div>
+          </article>
+
+          <article class="supervisor-card">
+            <div class="profile-photo"
+                 data-portrait="kaushika-kahatapitiya"
+                 data-folder="images/supervisors/"
+                 data-alt="Ms. Kaushika Kahatapitiya">
+              <span class="initials">KK</span>
+            </div>
+            <div>
+              <span class="eyebrow">Co-supervisor</span>
+              <h3>Ms. Kaushika Kahatapitiya</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="assets/site.js"></script>
+  <script>
+    // Automatically display .jpeg, .jpg, .png, or .webp images.
+    // If no photo is found, keep the initials visible.
+    document.querySelectorAll('[data-portrait]').forEach((box) => {
+      const base = box.dataset.folder + box.dataset.portrait;
+      const extensions = ['.jpeg', '.jpg', '.png', '.webp', '.jfif', '.JPEG', '.JPG', '.PNG', '.WEBP'];
+
+      function tryImage(index) {
+        if (index >= extensions.length) return;
+
+        const img = new Image();
+        img.onload = () => {
+          img.alt = box.dataset.alt || 'Profile photograph';
+          box.replaceChildren(img);
+        };
+        img.onerror = () => tryImage(index + 1);
+        img.src = base + extensions[index];
+      }
+      tryImage(0);
+    });
+  </script>
+</body>
+</html>

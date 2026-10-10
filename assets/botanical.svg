@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 720" role="img" aria-label="Decorative illustration of medicinal green leaves">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#244e3d"/><stop offset=".55" stop-color="#14372e"/><stop offset="1" stop-color="#0d2923"/></linearGradient>
+ <linearGradient id="l1" x1=".1" y1="0" x2=".9" y2="1"><stop stop-color="#d8dda6"/><stop offset=".5" stop-color="#88ad6a"/><stop offset="1" stop-color="#3f815b"/></linearGradient>
+ <linearGradient id="l2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#c5d9a5"/><stop offset="1" stop-color="#458e6a"/></linearGradient>
+ <radialGradient id="halo"><stop stop-color="#8baa78" stop-opacity=".32"/><stop offset="1" stop-color="#799c60" stop-opacity="0"/></radialGradient>
+ <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="12"/></filter>
+</defs>
+<rect width="680" height="720" rx="28" fill="url(#bg)"/>
+<circle cx="342" cy="338" r="290" fill="url(#halo)"/>
+<circle cx="346" cy="342" r="231" fill="none" stroke="#abc2a1" stroke-opacity=".24" stroke-width="1"/>
+<circle cx="346" cy="342" r="174" fill="none" stroke="#abc2a1" stroke-opacity=".16" stroke-width="1"/>
+<path d="M347 642 C354 533 326 436 345 343 C365 240 336 177 347 98" fill="none" stroke="#a7c59c" stroke-width="8" stroke-linecap="round"/>
+<path d="M347 554 C310 485 221 457 178 426 M341 462 C402 403 476 387 542 361 M347 383 C279 355 236 306 195 240 M348 305 C386 264 429 211 480 177 M347 233 C308 212 273 158 256 125" fill="none" stroke="#a7c59c" stroke-width="5" stroke-linecap="round"/>
+<g stroke="#e8efd0" stroke-opacity=".28" stroke-width="2">
+<path d="M178 426 C112 379 94 305 114 241 C170 255 229 321 239 385 C217 410 194 424 178 426Z" fill="url(#l1)"/><path d="M178 426 115 245 M164 385 118 353 M183 372 188 319 M155 341 119 303" fill="none"/>
+<path d="M541 363 C591 316 600 242 565 187 C513 207 468 272 466 333 C491 353 521 363 541 363Z" fill="url(#l2)"/><path d="M541 363 565 191 M532 323 579 294 M509 292 527 239" fill="none"/>
+<path d="M196 239 C127 217 93 151 103 94 C166 91 232 143 246 201 C234 218 210 234 196 239Z" fill="url(#l2)"/><path d="M196 239 105 95 M178 198 133 177 M184 170 197 133" fill="none"/>
+<path d="M480 177 C533 153 566 99 553 48 C501 46 447 81 428 142 C443 159 460 172 480 177Z" fill="url(#l1)"/><path d="M480 177 552 50 M465 143 505 119 M456 118 470 89" fill="none"/>
+<path d="M254 124 C194 87 181 32 202 6 C269 15 305 64 300 112 C281 121 268 124 254 124Z" fill="url(#l1)"/><path d="M254 124 205 9" fill="none"/>
+<path d="M349 340 C408 325 451 285 457 230 C402 224 352 253 325 309 C327 322 336 333 349 340Z" fill="url(#l2)"/><path d="M349 340 456 231" fill="none"/>
+<path d="M340 500 C289 477 266 421 277 374 C332 387 366 428 365 472 C357 484 348 492 340 500Z" fill="url(#l1)"/><path d="M340 500 278 376" fill="none"/>
+</g>
+<g opacity=".72" fill="#dee5b2"><circle cx="125" cy="570" r="3"/><circle cx="541" cy="129" r="3"/><circle cx="550" cy="565" r="2"/><circle cx="180" cy="128" r="2"/><circle cx="579" cy="486" r="2"/></g>
+<text x="44" y="669" fill="#e7ecdd" fill-opacity=".7" font-family="Georgia,serif" font-size="17" letter-spacing="4">NATURE · KNOWLEDGE · AI</text>
+</svg>

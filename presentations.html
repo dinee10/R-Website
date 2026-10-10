@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#15382d">
+  <meta name="description" content="Research presentation slides for R-26-IT-021, SLIIT.">
+  <title>Presentations | Herbal Research</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="presentations">
+  <div id="site-nav"></div>
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">Home</a> / Presentations</div>
+        <h1 class="serif">Presentations</h1>
+        <p>Proposal, progress and final research slides.</p>
+      </div>
+    </section>
+    <section class="section compact">
+      <div class="container">
+        <div class="section-heading">
+          <h2 class="serif">Presentation slides </h2>
+        </div>
+        <div class="doc-tools" id="slides-tools" hidden>
+          <input id="slides-search" type="search" class="search-input"
+                 placeholder="Search presentations" aria-label="Search presentations">
+        </div>
+      
+        <div class="doc-grid" id="slides-cards" aria-live="polite"></div>
+        <p class="empty-state" id="slides-empty" hidden>No presentations found.</p>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+
+
+  <script src="assets/site.js"></script>
+  <script>
+    (() => {
+      'use strict';
+      const items = [
+        { title: 'Proposal Presentation', slug: 'proposal' },
+        { title: 'Progress Presentation 1', slug: 'progress-1' },
+        { title: 'Progress Presentation 2', slug: 'progress-2' },
+        { title: 'Final Presentation', slug: 'final' }
+      ];
+      const folder = 'files/presentations/';
+      const grid = document.getElementById('slides-cards');
+      const count = document.getElementById('slides-count');
+      const empty = document.getElementById('slides-empty');
+      const tools = document.getElementById('slides-tools');
+      const search = document.getElementById('slides-search');
+
+     
+      async function available(path, requirePdf = false) {
+        try {
+          const response = await fetch(path, { method: 'HEAD', cache: 'no-store' });
+          if (!response.ok) return false;
+          const type = (response.headers.get('content-type') || '').toLowerCase();
+          if (type.includes('text/html')) return false; 
+          if (requirePdf && !(type.includes('pdf') || type.includes('octet-stream'))) return false;
+          return true;
+        } catch (error) {
+          return false;
+        }
+      }
+
+      function addDownload(actions, href, label) {
+        const link = document.createElement('a');
+        link.className = 'btn secondary';
+        link.href = href;
+        link.download = '';
+        link.textContent = label;
+        actions.appendChild(link);
+      }
+
+      function addCard(item, pdfReady, pptxReady) {
+        const pdf = folder + item.slug + '.pdf';
+        const pptx = folder + item.slug + '.pptx';
+        const card = document.createElement('article');
+        card.className = 'doc-card';
+        card.dataset.search = item.title.toLowerCase();
+        card.innerHTML = '<div class="doc-icon slides" aria-hidden="true">PPT</div>' +
+          '<div class="doc-main"><span class="eyebrow">Presentation</span>' +
+          '<h3></h3><p class="info-line">R-26-IT-021 · Research slides</p>' +
+          '<div class="doc-actions"></div></div>';
+        card.querySelector('h3').textContent = item.title;
+        const actions = card.querySelector('.doc-actions');
+
+        if (pdfReady) {
+          const view = document.createElement('button');
+          view.type = 'button';
+          view.className = 'btn primary';
+          view.textContent = 'View Slides';
+          view.addEventListener('click', () => {
+            if (typeof window.openPdf === 'function') {
+              window.openPdf(pdf, item.title);
+            } else {
+              window.open(pdf, '_blank', 'noopener');
+            }
+          });
+          actions.appendChild(view);
+          addDownload(actions, pdf, 'Download PDF');
+        }
+        if (pptxReady) addDownload(actions, pptx, 'Download PPTX');
+        grid.appendChild(card);
+      }
+
+      function refresh() {
+        const q = search.value.trim().toLowerCase();
+        const cards = Array.from(grid.children);
+        let visible = 0;
+        cards.forEach(card => {
+          const match = card.dataset.search.includes(q);
+          card.hidden = !match;
+          if (match) visible++;
+        });
+        count.textContent = `${visible} presentation${visible === 1 ? '' : 's'}`;
+        empty.hidden = visible > 0 || (!q && grid.children.length > 0);
+      }
+
+     
+      (async () => {
+        let total = 0;
+        for (const item of items) {
+          const pdf = folder + item.slug + '.pdf';
+          const pptx = folder + item.slug + '.pptx';
+          const [hasPdf, hasPptx] = await Promise.all([
+            available(pdf, true), available(pptx)
+          ]);
+          if (!hasPdf && !hasPptx) continue;
+          addCard(item, hasPdf, hasPptx);
+          total++;
+        }
+        count.hidden = total === 0;
+        tools.hidden = total === 0;
+        empty.hidden = total !== 0;
+        if (total === 0) empty.textContent = 'No presentation files found.';
+        refresh();
+      })();
+      search.addEventListener('input', refresh);
+    })();
+  </script>
+</body>
+</html>
