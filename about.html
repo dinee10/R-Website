@@ -27,12 +27,24 @@
     .supervisor-grid {
       max-width: 970px;
     }
+
     .supervisor-card .profile-photo {
-      width: 180px;
-      min-width: 180px;
-      height: 215px;
-      background: #edf3ea;
+      width: 195px;
+      min-width: 195px;
+      height: 235px;
+      flex: 0 0 195px;
+      border-radius: 13px;
+      overflow: hidden;
+      background: #edf3eb;
     }
+
+   .supervisor-card .profile-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+
     @media (max-width: 900px) {
       .supervisor-grid { grid-template-columns: 1fr; max-width: 600px; }
     }
