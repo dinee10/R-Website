@@ -1,223 +1,183 @@
-
 <!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#15382d">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#15382d">
+<meta name="description" content="Research information website for R-26-IT-021 at SLIIT: AI for Ayurvedic plant identification, bilingual herbal knowledge, cultivation recommendation and explainable quality assessment in Sri Lanka.">
+<title>Home | Herbal Research</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/styles.css">
+<style>
 
-    <meta name="description"
-          content="Research information website for project R-26-IT-021, SLIIT.">
-
-    <title>Home | Herbal Research</title>
-
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="assets/styles.css">
+.icon-circle svg{width:28px;height:28px;stroke:#2f6a4a;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.card-grid .card .icon-circle{margin-bottom:4px}
+.flow{display:grid;gap:10px;justify-items:center}
+.flow-node{background:#fff;border:1px solid var(--line);border-radius:14px;padding:15px 18px;text-align:center;box-shadow:0 7px 24px rgba(16,49,28,.04)}
+.flow-node strong{display:block;font-size:14px;margin-bottom:3px}
+.flow-node small{display:block;font-size:12px;line-height:1.5;color:var(--muted)}
+.flow-node.edge{background:var(--deep);border-color:var(--deep);color:#fff;width:min(560px,100%)}
+.flow-node.edge small{color:#c9ddcb}
+.flow-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;width:100%}
+.flow-row .flow-node{border-top:3px solid #75a472}
+.flow-arrow{color:#6f9b7a;font-size:22px;line-height:1}
+.abstract-grid{align-items:center;gap:58px}
+.abstract-stats{grid-template-columns:repeat(3,minmax(0,1fr))}
+.abstract-stats .result-stat{padding:16px}
+.abstract-stats .result-stat strong{font-size:28px}
+.flow-note{margin:14px 0 0;text-align:center;font-size:11px;color:#839286}
+@media (max-width:1100px){.flow-row{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:900px){.abstract-grid{grid-template-columns:1fr;gap:28px}}
+@media (max-width:560px){.flow-row{grid-template-columns:1fr}.abstract-stats{grid-template-columns:1fr}}
+</style>
 </head>
-
 <body data-page="index">
 
-    <div id="site-nav"></div>
-
-    <main id="main-content">
-
-        
-        <section class="hero">
-            <div class="container hero-grid">
-
-                <div class="hero-copy">
-
-                    <div class="eyebrow">
-                        SLIIT · Research R-26-IT-021
-                    </div>
-
-                    <h1 class="serif">
-                        Ayurvedic plants,
-                        <em>intelligent research.</em>
-                    </h1>
-
-                    <p class="lead">
-                        Exploring AI for plant identification,
-                        herbal knowledge, cultivation and
-                        quality assessment in Sri Lanka.
-                    </p>
-
-                    <div class="button-row">
-
-                        <a class="btn primary" href="domain.html">
-                            About the research →
-                        </a>
-
-                        <a class="btn secondary" href="documents.html">
-                            View documents
-                        </a>
-
-                    </div>
-
-                    
-                    <div class="hero-metrics">
-
-                        <div class="metric">
-                            <strong>04</strong>
-                            <small>COMPONENTS</small>
-                        </div>
-
-                        <div class="metric">
-                            <strong>04</strong>
-                            <small>RESEARCHERS</small>
-                        </div>
-
-                        <div class="metric">
-                            <strong>2026</strong>
-                            <small>PROJECT YEAR</small>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                
-                <div class="hero-visual">
-                    <img
-                        class="hero-art"
-                        src="assets/botanical.svg"
-                        alt="Illustration of medicinal plant leaves">
-                </div>
-
-            </div>
-        </section>
-
-        <section class="section" aria-labelledby="components-title">
-
-            <div class="container">
-
-                <div class="section-heading">
-                    <div>
-                        <div class="eyebrow">Research areas</div>
-
-                        <h2 class="serif" id="components-title">
-                            Four components
-                        </h2>
-                    </div>
-                </div>
-
-                <div class="card-grid">
-
-                   
-                    <article class="card">
-
-                        <span class="tag">01</span>
-
-                        <h3>Plant Identification</h3>
-
-                        <p>
-                            Recognizing medicinal plants from images.
-                        </p>
-
-                        <a class="text-link"
-                           href="domain.html#identification">
-                            Learn more →
-                        </a>
-
-                    </article>
-
-                   
-                    <article class="card">
-
-                        <span class="tag">02</span>
-
-                        <h3>Herbal Knowledge</h3>
-
-                        <p>
-                            Answering Sinhala and English questions using RAG.
-                        </p>
-
-                        <a class="text-link"
-                           href="domain.html#knowledge">
-                            Learn more →
-                        </a>
-
-                    </article>
-
-                  
-                    <article class="card">
-
-                        <span class="tag">03</span>
-
-                        <h3>Cultivation Support</h3>
-
-                        <p>
-                            Analyzing conditions and costs for crop selection.
-                        </p>
-
-                        <a class="text-link"
-                           href="domain.html#cultivation">
-                            Learn more →
-                        </a>
-
-                    </article>
-
-
-                    <article class="card">
-
-                        <span class="tag">04</span>
-
-                        <h3>Quality Assessment</h3>
-
-                        <p>
-                            Explaining plant condition and maturity predictions.
-                        </p>
-
-                        <a class="text-link"
-                           href="domain.html#quality">
-                            Learn more →
-                        </a>
-
-                    </article>
-
-                </div>
-
-            </div>
-        </section>
-
-     
-        <section class="section compact alt">
-
-            <div class="container quick-links">
-
-                <div>
-                    <div class="eyebrow">Project resources</div>
-
-                    <h2 class="serif">
-                        Research materials
-                    </h2>
-                </div>
-
-                <div class="button-row">
-
-                    <a class="btn primary" href="documents.html">
-                        Reports &amp; PDFs →
-                    </a>
-
-                    <a class="btn secondary" href="presentations.html">
-                        Presentations →
-                    </a>
-
-                    <a class="btn secondary" href="about.html">
-                        Meet the team →
-                    </a>
-
-                </div>
-
-            </div>
-        </section>
-
-    </main>
-
-    <div id="site-footer"></div>
-
-    <script src="assets/site.js"></script>
-
+<div id="site-nav"></div>
+
+<main id="main-content">
+
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow">SLIIT · Research R-26-IT-021</div>
+      <h1 class="serif">Ayurvedic plants, <em>intelligent research.</em></h1>
+      <p class="lead">Exploring AI for plant identification, herbal knowledge, cultivation and quality assessment in Sri Lanka.</p>
+      <div class="button-row">
+        <a class="btn primary" href="domain.html">About the research →</a>
+        <a class="btn secondary" href="documents.html">View documents</a>
+      </div>
+      <div class="hero-metrics">
+        <div class="metric"><strong>04</strong><small>COMPONENTS</small></div>
+        <div class="metric"><strong>04</strong><small>RESEARCHERS</small></div>
+        <div class="metric"><strong>2026</strong><small>PROJECT YEAR</small></div>
+      </div>
+      <p class="small" style="margin-top:18px">Supervised by Mr. Nelum Amarasena and Ms. Kaushika Kahatapitiya · Department of Information Technology, SLIIT</p>
+    </div>
+    <div class="hero-visual">
+      <img class="hero-art" src="assets/botanical.svg" alt="Illustration of medicinal plant leaves">
+      <div class="float-card"><span class="float-icon" aria-hidden="true">✧</span><span><strong>Research approaches</strong><small>Computer vision · NLP · Explainable AI · Analytics</small></span></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section alt" id="abstract" aria-labelledby="abstract-title">
+  <div class="container">
+    <div class="two-col abstract-grid">
+      <div>
+        <div class="eyebrow">Project abstract</div>
+        <h2 class="serif" id="abstract-title" style="margin:12px 0 17px">About the research</h2>
+        <p class="lead">Sri Lanka has a rich tradition of Ayurvedic medicinal plants, yet identifying them, finding reliable knowledge, choosing what to cultivate and judging plant quality are usually treated separately, with little local context and few explanations of AI predictions.</p>
+        <p>This project studies four connected AI components: image-based plant identification, a bilingual Sinhala and English herbal knowledge assistant using retrieval-augmented generation, cultivation recommendations from soil, climate and economic data, and explainable leaf quality assessment. The work supports research and decision making, not clinical diagnosis.</p>
+        <a class="btn secondary" style="margin-top:16px" href="domain.html">Read the research domain →</a>
+      </div>
+      <div class="wide-result">
+        <div class="eyebrow">Reported findings</div>
+        <h3 class="serif" style="font-size:29px">Early results</h3>
+        <p>Our research paper reports results for leaf quality assessment and the bilingual herbal knowledge assistant.</p>
+        <div class="result-stats abstract-stats">
+          <div class="result-stat"><strong>89.27%</strong><span>Condition accuracy</span></div>
+          <div class="result-stat"><strong>91.74%</strong><span>Maturity accuracy</span></div>
+          <div class="result-stat"><strong>11/12</strong><span>Plant retrieval · pilot</span></div>
+        </div>
+        <p class="small" style="margin:0">These results cover two components only.</p>
+        <a class="text-link" style="display:inline-block;margin-top:14px" href="documents.html">Read the research paper →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" aria-labelledby="components-title">
+  <div class="container">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">Research areas</div>
+        <h2 class="serif" id="components-title">Four components</h2>
+      </div>
+    </div>
+    <div class="card-grid">
+      <article class="card">
+        <div class="icon-circle" aria-hidden="true"><svg viewBox="0 0 28 28"><path d="M3 8V4h4M21 4h4v4M25 20v4h-4M7 24H3v-4"/><path d="M9 19c0-6 4-10 10-10 0 6-4 10-10 10zM9 19l6-6"/></svg></div>
+        <span class="tag">01</span><h3>Plant Identification</h3><p>Recognizing medicinal plants from smartphone images.</p><a class="text-link" href="domain.html#identification">Learn more →</a>
+      </article>
+      <article class="card">
+        <div class="icon-circle" aria-hidden="true"><svg viewBox="0 0 28 28"><path d="M4 6h20v13H12l-5 4v-4H4zM9 11h10M9 15h6"/></svg></div>
+        <span class="tag">02</span><h3>Herbal Knowledge</h3><p>Answering Sinhala and English questions using RAG.</p><a class="text-link" href="domain.html#knowledge">Learn more →</a>
+      </article>
+      <article class="card">
+        <div class="icon-circle" aria-hidden="true"><svg viewBox="0 0 28 28"><path d="M14 22v-8M14 14c0-4-3-6-6-6 0 4 2 6 6 6M14 16c0-3 2-5 6-5 0 3-2 5-6 5M6 22h16"/></svg></div>
+        <span class="tag">03</span><h3>Cultivation Support</h3><p>Analyzing conditions and costs for crop selection.</p><a class="text-link" href="domain.html#cultivation">Learn more →</a>
+      </article>
+      <article class="card">
+        <div class="icon-circle" aria-hidden="true"><svg viewBox="0 0 28 28"><circle cx="12" cy="12" r="7"/><path d="M17.5 17.5L24 24M9 12l2.5 2.5L15.5 9.5"/></svg></div>
+        <span class="tag">04</span><h3>Quality Assessment</h3><p>Explaining plant condition and maturity predictions.</p><a class="text-link" href="domain.html#quality">Learn more →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<section class="section compact alt" aria-labelledby="flow-title">
+  <div class="container">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">System overview</div>
+        <h2 class="serif" id="flow-title">How the components fit together</h2>
+      </div>
+    </div>
+    <div class="flow">
+      <div class="flow-node edge"><strong>Mobile interface</strong><small>Flutter · smartphone images and questions</small></div>
+      <div class="flow-arrow" aria-hidden="true">↓</div>
+      <div class="flow-row">
+        <div class="flow-node"><strong>Plant Identification</strong><small>Deep learning on plant images</small></div>
+        <div class="flow-node"><strong>Herbal Knowledge</strong><small>RAG · ChromaDB · Sinhala and English</small></div>
+        <div class="flow-node"><strong>Cultivation Support</strong><small>Soil, climate and economic data</small></div>
+        <div class="flow-node"><strong>Quality Assessment</strong><small>EfficientNetV2-B0 · Grad-CAM</small></div>
+      </div>
+      <div class="flow-arrow" aria-hidden="true">↓</div>
+      <div class="flow-node edge"><strong>Backend AI services</strong><small>Python · research and decision support, not clinical diagnosis</small></div>
+    </div>
+    <p class="flow-note">Simplified overview. See the Domain page for methods and technologies.</p>
+  </div>
+</section>
+
+
+<section class="section compact" aria-labelledby="explore-title">
+  <div class="container">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">Explore this website</div>
+        <h2 class="serif" id="explore-title">Where to find things</h2>
+      </div>
+    </div>
+    <div class="card-grid">
+      <article class="card"><span class="tag">Domain</span><h3>Research background</h3><p>Literature survey, gap, problem, objectives, methodology and technologies.</p><a class="text-link" href="domain.html">Open domain →</a></article>
+      <article class="card"><span class="tag">Milestones</span><h3>Assessments</h3><p>Proposal, progress presentations, final assessment and viva.</p><a class="text-link" href="milestones.html">View milestones →</a></article>
+      <article class="card"><span class="tag">Documents</span><h3>Reports and papers</h3><p>Proposals, topic assessment form, research paper and final reports.</p><a class="text-link" href="documents.html">Open documents →</a></article>
+      <article class="card"><span class="tag">Presentations</span><h3>Slides</h3><p>Proposal, progress and final presentation slides.</p><a class="text-link" href="presentations.html">View slides →</a></article>
+    </div>
+  </div>
+</section>
+
+<section class="section compact alt">
+  <div class="container quick-links">
+    <div>
+      <div class="eyebrow">The team</div>
+      <h2 class="serif">Meet the researchers</h2>
+    </div>
+    <div class="button-row">
+      <a class="btn primary" href="about.html">Meet the team →</a>
+      <a class="btn secondary" href="contact.html">Contact us →</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<div id="site-footer"></div>
+<script src="assets/site.js"></script>
 </body>
 </html>
