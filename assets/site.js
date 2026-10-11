@@ -2,10 +2,10 @@
 const SITE = {
   projectId: 'R-26-IT-021',
   members: [
-    { name: 'H D Sachintha', studentId: 'IT22168986', role: 'Plant Identification', email: '' },
-    { name: 'Munasinghe M P', studentId: 'IT22640598', role: 'Herbal Knowledge', email: '' },
-    { name: 'D G T K Wickramasinghe', studentId: 'IT22132796', role: 'Cultivation Recommendation', email: '' },
-    { name: 'Pattiya Arachchi P A H K', studentId: 'IT22112132', role: 'Quality Assessment', email: '' }
+    { name: 'H D Sachintha', studentId: 'IT22168986', role: 'Plant Identification', email: 'it22168986@my.sliit.lk' },
+    { name: 'Munasinghe M P', studentId: 'IT22640598', role: 'Herbal Knowledge', email: 'it226405986@my.sliit.lk' },
+    { name: 'D G T K Wickramasinghe', studentId: 'IT22132796', role: 'Cultivation Recommendation', email: 'it221327966@my.sliit.lk' },
+    { name: 'Pattiya Arachchi P A H K', studentId: 'IT22112132', role: 'Quality Assessment', email: 'it221112132@my.sliit.lk' }
   ],
   nav: [
     ['Home', 'index.html'], ['Domain', 'domain.html'], ['Milestones', 'milestones.html'],
@@ -110,8 +110,6 @@ if(documentGrid){
       card.hidden=!match;
       if(match)count++;
     });
-    document.querySelector('#document-count').textContent=`${count} document${count===1?'':'s'}`;
-    document.querySelector('#no-documents').hidden=count!==0;
   }
   input.addEventListener('input',refresh);
   filters.forEach(button=>button.addEventListener('click',()=>{

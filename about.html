@@ -9,9 +9,9 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/styles.css">
 
-  <!-- Photo adjustments: keep the original cards but show complete photographs. -->
+
   <style>
-    /* Taller portrait frames for members, without cropping any part. */
+  
     .profile-card .profile-photo {
       height: 282px;
       background: #edf3ea;
@@ -23,7 +23,7 @@
       object-fit: contain;
       object-position: center;
     }
-    /* Larger supervisor photos, with room for full portraits. */
+   
     .supervisor-grid {
       max-width: 970px;
     }
@@ -74,7 +74,7 @@
       </div>
     </section>
 
-    <!-- GROUP MEMBERS -->
+    
     <section class="section compact">
       <div class="container">
         <div class="section-heading">
@@ -82,7 +82,7 @@
         </div>
 
         <div class="profiles">
-          <!-- Group leader: first -->
+         
           <article class="profile-card">
             <div class="profile-photo"
                  data-portrait="munasinghe"
@@ -98,7 +98,7 @@
             </div>
           </article>
 
-          <!-- Group member: Plant Identification -->
+          
           <article class="profile-card">
             <div class="profile-photo"
                  data-portrait="sachintha"
@@ -114,7 +114,7 @@
             </div>
           </article>
 
-          <!-- Group member: Cultivation Recommendation -->
+          
           <article class="profile-card">
             <div class="profile-photo"
                  data-portrait="wickramasinghe"
@@ -130,7 +130,7 @@
             </div>
           </article>
 
-          <!-- Group member: Quality Assessment -->
+          
           <article class="profile-card">
             <div class="profile-photo"
                  data-portrait="pattiya-arachchi"
@@ -149,7 +149,7 @@
       </div>
     </section>
 
-    <!-- ACADEMIC SUPERVISORS -->
+    
     <section class="section compact alt">
       <div class="container">
         <div class="section-heading">
@@ -189,8 +189,7 @@
   <div id="site-footer"></div>
   <script src="assets/site.js"></script>
   <script>
-    // Automatically display .jpeg, .jpg, .png, or .webp images.
-    // If no photo is found, keep the initials visible.
+    
     document.querySelectorAll('[data-portrait]').forEach((box) => {
       const base = box.dataset.folder + box.dataset.portrait;
       const extensions = ['.jpeg', '.jpg', '.png', '.webp', '.jfif', '.JPEG', '.JPG', '.PNG', '.WEBP'];
