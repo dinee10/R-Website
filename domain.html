@@ -1,119 +1,270 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#15382d">
-  <meta name="description" content="Research domain for project R-26-IT-021, SLIIT.">
-  <title>Domain | Herbal Research</title>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#15382d">
+    <meta name="description" content="Research domain for project R-26-IT-021, SLIIT.">
+
+    <title>Domain | Herbal Research</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/styles.css">
 </head>
+
 <body data-page="domain">
-  <div id="site-nav"></div>
-  <main id="main-content">
-    <section class="page-hero">
-      <div class="container">
-        <div class="breadcrumb"><a href="index.html">Home</a> / Research Domain</div>
-        <h1 class="serif">Research Domain</h1>
-        <p>Background, objectives, methodology and reported findings.</p>
-      </div>
-    </section>
+    <div id="site-nav"></div>
 
-    <section class="section">
-      <div class="container content-grid">
-        <aside class="side-menu">
-          <small>CONTENTS</small>
-          <a href="#literature">Literature survey</a>
-          <a href="#gap">Research gap</a>
-          <a href="#problem">Research problem</a>
-          <a href="#objectives">Objectives</a>
-          <a href="#components">Components</a>
-          <a href="#methodology">Methodology</a>
-          <a href="#technologies">Technologies</a>
-          <a href="#findings">Findings</a>
-        </aside>
+    <main id="main-content">
+        <section class="page-hero">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> / Research Domain
+                </div>
 
-        <div>
-          <section class="article-section" id="literature">
-            <h2 class="serif">Literature survey</h2>
-            <p>Previous research uses deep learning for plant recognition, knowledge bases and chatbots for herbal information, and machine learning for crop recommendations. Explainable AI methods such as Grad-CAM help show which image regions influence quality predictions.</p>
-            <a class="text-link" href="documents.html">Read the individual proposals →</a>
-          </section>
-
-          <section class="article-section" id="gap">
-            <h2 class="serif">Research gap</h2>
-            <p>Existing approaches often address identification, herbal knowledge, cultivation and plant quality separately. The research focuses on Sri Lankan medicinal plants, Sinhala and English knowledge access, and interpretable AI results.</p>
-          </section>
-
-          <section class="article-section" id="problem">
-            <h2 class="serif">Research problem</h2>
-            <p>Medicinal plants can be difficult to identify, reliable traditional knowledge is not always easy to access, and small-scale farmers need better information about cultivation suitability and market conditions.</p>
-          </section>
-
-          <section class="article-section" id="objectives">
-            <h2 class="serif">Research objectives</h2>
-            <p>Explore an integrated AI-based decision-support approach for plant identification, bilingual herbal knowledge, cultivation recommendations and explainable plant quality assessment.</p>
-          </section>
-
-          <section class="article-section" id="components">
-            <h2 class="serif">Research components</h2>
-            <div class="two-col compact-cards">
-              <article class="card" id="identification">
-                <span class="tag">01 · IT22168986</span>
-                <h3>Plant Identification</h3>
-                <p>Identify Sri Lankan medicinal plants from leaf and flower images using computer vision and deep learning.</p>
-              </article>
-              <article class="card" id="knowledge">
-                <span class="tag">02 · IT22640598</span>
-                <h3>Herbal Knowledge</h3>
-                <p>Answer Sinhala and English questions about medicinal plants through retrieval-augmented generation (RAG).</p>
-              </article>
-              <article class="card" id="cultivation">
-                <span class="tag">03 · IT22132796</span>
-                <h3>Cultivation Recommendation</h3>
-                <p>Recommend suitable herbs using soil, climate, market demand and estimated economic outcomes.</p>
-              </article>
-              <article class="card" id="quality">
-                <span class="tag">04 · IT22112132</span>
-                <h3>Quality Assessment</h3>
-                <p>Assess leaf condition and maturity, with Grad-CAM explanations of image-based predictions.</p>
-              </article>
+                <h1 class="serif">Research Domain</h1>
+                <p>Research background, methods and findings.</p>
             </div>
-          </section>
+        </section>
 
-          <section class="article-section" id="methodology">
-            <h2 class="serif">Methodology</h2>
-            <p>The proposal outlines literature review, dataset preparation, component development, system integration and evaluation. Each component uses methods suited to its task, including image classification, knowledge retrieval and cultivation analysis.</p>
-            <div class="pill-row">
-              <span class="pill">Literature review</span>
-              <span class="pill">Data preparation</span>
-              <span class="pill">Model development</span>
-              <span class="pill">Evaluation</span>
+        <section class="section">
+            <div class="container content-grid">
+                <aside class="side-menu">
+                    <small>CONTENTS</small>
+                    <a href="#literature">Literature survey</a>
+                    <a href="#gap">Research gap</a>
+                    <a href="#problem">Research problem</a>
+                    <a href="#objectives">Objectives</a>
+                    <a href="#components">Components</a>
+                    <a href="#methodology">Methodology</a>
+                    <a href="#technologies">Technologies</a>
+                    <a href="#findings">Findings</a>
+                </aside>
+
+                <div>
+                    <section class="article-section" id="literature">
+                        <h2 class="serif">Literature survey</h2>
+
+                        <p>
+                            <strong>Plant identification:</strong>
+                            Leafsnap and other image-based systems show how computer vision
+                            can identify plant species [11], [12]. A Sri Lankan mobile tool
+                            also combined herb identification with learning content [13].
+                        </p>
+
+                        <p>
+                            <strong>Herbal knowledge:</strong>
+                            An ontology was developed to represent Sri Lankan medicinal-plant
+                            information [8]. A Sinhala virtual assistant made this knowledge
+                            more conversational [9], while research on hallucinations
+                            highlights the need to check generated answers [10].
+                        </p>
+
+                        <p>
+                            <strong>Quality assessment:</strong>
+                            EfficientNetV2 provides a foundation for image classification [14].
+                            Grad-CAM helps explain image predictions by highlighting
+                            influential image regions [15].
+                        </p>
+
+                        <p>
+                            <strong>Cultivation recommendation:</strong>
+                            Research on Sri Lankan medicinal materials identifies sourcing
+                            and quality challenges [2]. The group thesis highlights the gap
+                            in recommendations combining soil, weather, land and budget
+                            for small-scale medicinal-plant farmers.
+                        </p>
+
+                        <div class="soft-panel">
+                            <h3>Selected references</h3>
+
+                            <p class="small">
+                                [2] T. N. M. Kankanamalage et al., “A survey on medicinal materials
+                                used in traditional systems of medicine in Sri Lanka,”
+                                <em>Journal of Ethnopharmacology</em>, 2014.
+                            </p>
+
+                            <p class="small">
+                                [8] P. Jeyananthan, E. Y. A. Charles and D. A. S. Atukorale,
+                                “Ontology development for Sri Lankan medicinal plants:
+                                A knowledge representation,” SLAAI, 2015.
+                            </p>
+
+                            <p class="small">
+                                [9] A. D. A. D. S. Jayalath et al., “Ayurvedic knowledge sharing
+                                platform with Sinhala virtual assistant,” ICAC, 2019.
+                            </p>
+
+                            <p class="small">
+                                [10] Z. Ji et al., “Survey of hallucination in natural language
+                                generation,” <em>ACM Computing Surveys</em>, 2023.
+                            </p>
+
+                            <p class="small">
+                                [11] A. Joly et al., “Interactive plant identification based on
+                                social image data,” <em>Ecological Informatics</em>, 2014.
+                            </p>
+
+                            <p class="small">
+                                [12] N. Kumar et al., “Leafsnap: A computer vision system for
+                                automatic plant species identification,” ECCV, 2012.
+                            </p>
+
+                            <p class="small">
+                                [13] L. P. D. S. Senevirathne et al., “Mobile-based assistive
+                                tool to identify &amp; learn medicinal herbs,” ICAC, 2020.
+                            </p>
+
+                            <p class="small">
+                                [14] M. Tan and Q. Le, “EfficientNetV2: Smaller models and
+                                faster training,” ICML, 2021.
+                            </p>
+
+                            <p class="small">
+                                [15] R. R. Selvaraju et al., “Grad-CAM: Visual explanations
+                                from deep networks via gradient-based localization,” ICCV, 2017.
+                            </p>
+                        </div>
+
+                        <p class="small" style="margin-top:14px">
+                            Reference numbers follow the Group Final Thesis Draft,
+                            Chapter 2 and its reference list.
+                        </p>
+
+                        <a class="text-link" href="documents.html">
+                            Read the group thesis and proposals →
+                        </a>
+                    </section>
+
+                    <section class="article-section" id="gap">
+                        <h2 class="serif">Research gap</h2>
+                        <p>
+                            Existing tools often address identification, herbal knowledge,
+                            plant quality or cultivation separately. Few connect these
+                            functions with bilingual explanations and safety checks for
+                            Sri Lankan medicinal plants.
+                        </p>
+                    </section>
+
+                    <section class="article-section" id="problem">
+                        <h2 class="serif">Research problem</h2>
+                        <p>
+                            How can an integrated AI system improve medicinal-plant
+                            identification, reliable knowledge access, quality assessment
+                            and cultivation decisions in Sri Lanka?
+                        </p>
+                    </section>
+
+                    <section class="article-section" id="objectives">
+                        <h2 class="serif">Objectives</h2>
+                        <p>
+                            Develop and evaluate a mobile system that identifies medicinal
+                            plants, provides grounded Sinhala and English knowledge,
+                            explains leaf quality and recommends suitable plants to grow.
+                        </p>
+                    </section>
+
+                    <section class="article-section" id="components">
+                        <h2 class="serif">Research components</h2>
+
+                        <div class="two-col compact-cards">
+                            <article class="card" id="identification">
+                                <span class="tag">01 · IT22168986</span>
+                                <h3>Plant Identification</h3>
+                                <p>EfficientNetV2 classifiers and YOLO11 detect and identify plants from leaf, seed and flower images.</p>
+                            </article>
+
+                            <article class="card" id="knowledge">
+                                <span class="tag">02 · IT22640598</span>
+                                <h3>Herbal Knowledge</h3>
+                                <p>A bilingual RAG assistant retrieves curated plant information and provides answers with precautions.</p>
+                            </article>
+
+                            <article class="card" id="cultivation">
+                                <span class="tag">03 · IT22132796</span>
+                                <h3>Cultivation Recommendation</h3>
+                                <p>A machine-learning recommendation module considers soil, land size, budget and local weather.</p>
+                            </article>
+
+                            <article class="card" id="quality">
+                                <span class="tag">04 · IT22112132</span>
+                                <h3>Quality Assessment</h3>
+                                <p>An EfficientNetV2-B0 cascade checks species, condition and maturity, with Grad-CAM explanations.</p>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section class="article-section" id="methodology">
+                        <h2 class="serif">Methodology</h2>
+                        <p>
+                            The team followed literature review, data collection,
+                            preprocessing, model development, component integration
+                            and evaluation, using a shared Flutter application and Flask API.
+                        </p>
+                        <div class="pill-row">
+                            <span class="pill">Research</span>
+                            <span class="pill">Datasets</span>
+                            <span class="pill">Models</span>
+                            <span class="pill">Evaluation</span>
+                        </div>
+                    </section>
+
+                    <section class="article-section" id="technologies">
+                        <h2 class="serif">Technologies</h2>
+                        <p>
+                            Flutter, Python and Flask support the application. The research
+                            uses EfficientNetV2, YOLO11, Grad-CAM, ChromaDB,
+                            OpenAI text-embedding-3-large and GPT-4o mini,
+                            alongside machine-learning models for cultivation.
+                        </p>
+                    </section>
+
+                    <section class="article-section" id="findings">
+                        <h2 class="serif">Reported findings</h2>
+                        <p>Results summarized from the Group Final Thesis Draft.</p>
+
+                        <div class="two-col compact-cards">
+                            <article class="card">
+                                <span class="tag">01 · Plant Identification</span>
+                                <h3>93.33% leaf validation</h3>
+                                <p>14/15 leaf, 59/59 seed or spice, and 32/35 flower images were correctly classified in recorded validation. Small splits and duplicate images limit generalization.</p>
+                            </article>
+
+                            <article class="card">
+                                <span class="tag">02 · Herbal Knowledge</span>
+                                <h3>11/12 correct retrievals</h3>
+                                <p>Correct plant knowledge was retrieved for 5/6 English and 6/6 Sinhala questions. All eight audience-interaction tests passed.</p>
+                            </article>
+
+                            <article class="card">
+                                <span class="tag">03 · Cultivation Recommendation</span>
+                                <h3>Prototype tested</h3>
+                                <p>Recommendations were tested with soil, land, budget and weather inputs. The cultivation dataset remains too small for a dependable general accuracy claim.</p>
+                            </article>
+
+                            <article class="card">
+                                <span class="tag">04 · Quality Assessment</span>
+                                <h3>89.27% condition accuracy</h3>
+                                <p>Held-out testing reported 96.66% species, 89.27% condition and 91.74% maturity accuracy, with Grad-CAM visual explanations.</p>
+                            </article>
+                        </div>
+
+                        <p class="small" style="margin-top:18px">
+                            Results are component-level and do not establish clinical use
+                            or field accuracy for every setting.
+                        </p>
+
+                        <a class="text-link" href="documents.html">
+                            View the group thesis draft →
+                        </a>
+                    </section>
+                </div>
             </div>
-          </section>
+        </section>
+    </main>
 
-          <section class="article-section" id="technologies">
-            <h2 class="serif">Technologies</h2>
-            <p>The proposal includes Python, mobile development, computer vision, machine learning, RAG and Grad-CAM. The later research paper reports EfficientNetV2-B0 for quality assessment and ChromaDB with language-model embeddings for herbal knowledge retrieval.</p>
-          </section>
-
-          <section class="article-section" id="findings">
-            <h2 class="serif">Reported findings</h2>
-            <p>The supplied research paper reports the following results for the quality-assessment and conversational-assistant components:</p>
-            <div class="result-stats">
-              <div class="result-stat"><strong>89.27%</strong><span>Condition accuracy</span></div>
-              <div class="result-stat"><strong>91.74%</strong><span>Maturity accuracy</span></div>
-              <div class="result-stat"><strong>11/12</strong><span>Correct plant retrieval · bilingual pilot</span></div>
-            </div>
-            <p class="small" style="margin-top:12px">These figures do not represent the results of all four components. The system provides educational and decision-support information, not clinical diagnosis.</p>
-            <button type="button" class="btn secondary" onclick="openPdf('files/papers/quality-and-knowledge-paper.pdf','Research paper')">View research paper ↗</button>
-          </section>
-        </div>
-      </div>
-    </section>
-  </main>
-  <div id="site-footer"></div>
-  <script src="assets/site.js"></script>
+    <div id="site-footer"></div>
+    <script src="assets/site.js"></script>
 </body>
+
 </html>

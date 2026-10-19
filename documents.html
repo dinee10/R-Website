@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 
@@ -6,48 +5,35 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#15382d">
-
-    <meta name="description"
-          content="Research information website for project R-26-IT-021, SLIIT.">
+    <meta name="description" content="Research documents for project R-26-IT-021, SLIIT.">
 
     <title>Documents | Herbal Research</title>
-
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 
 <body data-page="documents">
-
     <div id="site-nav"></div>
 
     <main id="main-content">
-
-        <!-- PAGE HEADER -->
         <section class="page-hero">
             <div class="container">
-
                 <div class="breadcrumb">
                     <a href="index.html">Home</a> / Documents
                 </div>
 
                 <h1 class="serif">Documents</h1>
-
                 <p>Project proposals, reports and research files.</p>
-
             </div>
         </section>
 
-       
         <section class="section compact">
             <div class="container">
-
                 <div class="section-heading">
                     <h2 class="serif">Project documents</h2>
                 </div>
 
-               
                 <div class="doc-tools">
-
                     <input
                         id="document-search"
                         type="search"
@@ -56,55 +42,45 @@
                         placeholder="Search documents"
                     >
 
-                    <button class="filter-btn active"
-                            data-filter="All">
+                    <button class="filter-btn active" data-filter="All" type="button">
                         All
                     </button>
 
-                    <button class="filter-btn"
-                            data-filter="Proposal">
+                    <button class="filter-btn" data-filter="Proposal" type="button">
                         Proposals
                     </button>
 
-                    <button class="filter-btn"
-                            data-filter="TAF">
+                    <button class="filter-btn" data-filter="TAF" type="button">
                         TAF
                     </button>
 
-                    <button class="filter-btn"
-                            data-filter="Paper">
+                    <button class="filter-btn" data-filter="Paper" type="button">
                         Paper
                     </button>
 
-                    <button class="filter-btn"
-                            data-filter="Final Report Draft">
+                    <button class="filter-btn" data-filter="Final Report Draft" type="button">
                         Final Report Drafts
                     </button>
 
+                    <button class="filter-btn" data-filter="Checklist" type="button">
+                        Checklists
+                    </button>
                 </div>
 
-                <div
-                    id="document-grid"
-                    class="doc-grid"
-                    aria-live="polite">
-                </div>
+                <!-- Required by site.js; hidden to keep the page uncluttered. -->
+                <span id="document-count" hidden></span>
 
-                
-                <p
-                    class="empty-state"
-                    id="no-documents"
-                    hidden>
+                <div id="document-grid" class="doc-grid" aria-live="polite"></div>
+
+                <p class="empty-state" id="no-documents" hidden>
                     No matching documents.
                 </p>
-
             </div>
         </section>
-
     </main>
 
     <div id="site-footer"></div>
-
     <script src="assets/site.js"></script>
-
 </body>
+
 </html>
